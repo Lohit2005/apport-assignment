@@ -1,0 +1,103 @@
+/* index.css */
+
+/* Container for the entire application */
+.container {
+  padding: 20px;
+}
+
+/* Styling for the main dropdown */
+.dropdown {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Display dropdown styling */
+.display-dropdown {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 120px; /* Set a fixed width */
+  text-align: center;
+  font-weight: bold; /* Make the dropdown label bold */
+}
+
+/* Nested dropdowns styling */
+.nested-dropdowns {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5px; /* Space between main dropdown and nested dropdowns */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Stack label and select vertically */
+}
+
+/* Styling for select elements */
+.dropdown-item select {
+  margin-top: 5px; /* Space between label and select */
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for the group columns */
+.grouping-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between columns */
+}
+
+/* Each group column styling */
+.group-column {
+  flex: 1; /* Adjust as needed */
+  min-width: 200px; /* Minimum width for each column */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f4f8; /* Light background for better visibility */
+}
+
+/* Group header styling */
+.group-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Ticket card styling */
+.ticket-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+/* Ticket card hover effect */
+.ticket-card:hover {
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Styling for ticket details */
+.ticket-details {
+  color: black; /* Ensuring text is black */
+  font-size: 1em;
+  line-height: 1.5; /* Increases line spacing for better readability */
+}
+
+/* Additional tag styling for better visibility */
+.ticket-details div:nth-child(3) {
+  color: #6c757d; /* Different color for tags */
+  font-size: 0.9em; /* Slightly smaller font */
+}
